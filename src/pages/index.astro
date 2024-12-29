@@ -2,10 +2,10 @@
 import "@fontsource-variable/inter";
 import { Code } from "astro:components";
 
+import Navigation from "~/components/navigation.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
 import ContactBanner from '~/components/contact-banner.astro'
-import AboutCompany from '~/components/about-company.astro'
+import AboutCompany from '~/components/about.astro'
 
 import "~/styles/index.css";
 
@@ -61,8 +61,8 @@ const description =
   <body
     class=""
   >
-    <Header />
-    <Intro /> 
+    <Navigation />
+    <Header /> 
     <ContactBanner />
     <AboutCompany />
   </body>

@@ -1,19 +1,22 @@
-<header>
-  <div
-    class="container mx-auto flex flex-col items-center justify-between lg:flex-row lg:py-4"
-  >
-    <!-- Logo -->
-    <div class="py-4 lg:py-0">
-      <img class="float-right" src="../assets/AETAS.png" width="200px" />
-    </div>
+---
+import { Image } from "astro:assets";
+import truckHome from "../assets/truck-home.jpg";
+---
 
-    <nav>
-      <ul class="flex justify-start">
-        <li class="p-4">inicio</li>
-        <li class="p-4">servicios</li>
-        <li class="p-4">galeria</li>
-        <li class="p-4">contacto</li>
-      </ul>
-    </nav>      
+<section>
+  <div class="relative">
+    <Image
+      class="absolute h-full w-full object-cover"
+      src={truckHome}
+      alt="Hola"
+    />
+    <div class="absolute h-full w-full bg-black opacity-60"></div>
+    <div class="relative flex flex-row py-8 text-left">
+      <h1
+        class="container mx-auto text-left font-bold text-white text-4xl md:text-6xl lg:py-52 lg:text-7xl"
+      >
+        AETAS
+      </h1>
+    </div>
   </div>
-</header>
+</section>

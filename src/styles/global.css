@@ -10,3 +10,11 @@ a,
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
 }
+
+.contact-banner {
+  background: rgb(255 8 48 / 75%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+}
